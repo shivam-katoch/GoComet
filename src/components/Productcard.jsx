@@ -173,7 +173,7 @@ const Productcard = () => {
           </div>
           <div>
             <p id="size">Select Size</p>
-            <div className="size-group">
+            <div className="size-group" value={size}>
               <span className="sizess" value={38} onClick={setSize}>38</span>
               <span className="sizess" value={40} onClick={setSize}>40</span>
               <span className="sizess" value={42} onClick={setSize}>42</span>
