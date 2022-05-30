@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import {AiOutlineHeart} from 'react-icons/ai'
-import { Box, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { setWish } from '../assets/store/wishSlice';
 const Cont=styled('div')(`
@@ -124,7 +124,7 @@ const Producttemplate = ({props}) => {
   const towishlist=(ev)=>{
     if(wish)
     {
-      dispatch(setWish(wishProduct.filter((e)=>e.id!=ev.target.value)));
+      dispatch(setWish(wishProduct.filter((e)=>e.id!==ev.target.value)));
       setwish(false)
     }
     else{
